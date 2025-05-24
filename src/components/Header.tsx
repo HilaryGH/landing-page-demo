@@ -77,7 +77,7 @@ function Header() {
         <div className="absolute inset-0 golden-bg-transparent z-0"></div>
 
         <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-6">
-          <h1 className="text-xl md:text-4xl font-bold mb-4 text-purple-900">
+          <h1 className="text-2xl md:text-4xl font-bold mb-4 text-purple-900">
             Connecting Capital to Opportunity
           </h1>
           <p className="text-lg mb-6 text-purple-800">
@@ -99,11 +99,11 @@ function Header() {
       {/* About */}
       <section
         id="about"
-        className="mt-4 rounded golden-bg p-10 h-screen transition duration-300 flex flex-col-reverse md:flex-row items-center justify-between items-center text-center md:text-left gap-4 mx-auto"
+        className="mt-4 rounded golden-bg p-4 md:p-10 min-h-screen flex flex-col-reverse md:flex-row items-center justify-center text-center md:text-left gap-6 md:gap-12"
       >
         {/* Text Content */}
         <div className="md:w-1/2">
-          <h2 className="text-3xl text-center font-bold mb-4">About Us</h2>
+          <h2 className="text-2xl text-center font-bold mb-4">About Us</h2>
           <p className="text-purple-900">
             Our vision is to become a trusted investment banking partner by
             delivering tailored financial solutions. Our mission is to deliver
@@ -165,10 +165,11 @@ function Header() {
       {/* Contact */}
       <section
         id="contact"
-        className="golden-bg mt-4 h-screen p-10 text-center transition duration-300"
+        className="golden-bg mt-4 min-h-screen flex flex-col items-center justify-center px-4 transition duration-300"
       >
-        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-        <form className="w-full max-w-md mx-auto bg-purple-400 p-6 rounded-lg shadow-md text-left text-[#333]">
+        <h2 className="text-2xl font-bold mb-6 text-center">Contact Us</h2>
+
+        <form className="w-full max-w-md bg-purple-400 p-6 rounded-lg shadow-md text-left text-[#333]">
           <label htmlFor="name" className="block font-semibold mb-1">
             Name
           </label>
@@ -207,7 +208,7 @@ function Header() {
 
           <button
             type="submit"
-            className=" golden-bg font-semibold px-4 py-2 rounded hover:bg-[#4B4B4B] hover:text-white hover:shadow-lg transition duration-300"
+            className="golden-bg font-semibold px-4 py-2 rounded hover:bg-[#4B4B4B] hover:text-white hover:shadow-lg transition duration-300"
           >
             Send Message
           </button>
